@@ -41,15 +41,18 @@ body {
     background-color:#ff7979 ;
     height:200px;
     width:200px;
-    border-radius: 50%;
+    border-radius:50%;
     position:relative;
     transition: transform 0.5s linear;
+}
+.container.show-nav .circle{
+    transform:rotate(-70deg);
 }
 
 .circle button {
     position:absolute;
     top:50%;
-    left:50%;
+    
     background:transparent;
     border:0;
     font-size:26px;
@@ -59,6 +62,15 @@ body {
 
 .circle button#open {
     left:60%;
+    top:60%;
+}
+
+.circle button#close {
+     top:60%;
+     left:40%;
+     transform-origin:top left ;
+   transform: rotate(90deg);
+    
 }
 
 
